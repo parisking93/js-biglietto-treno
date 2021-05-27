@@ -10,9 +10,8 @@ var km = parseFloat(prompt('Quanti chilometri devi percorrere ?'));
 // fine input utente 
 // calcolo prezzo della corsa in base ai kilometri 
 var prezzoCorsa = km * 0.21
-console.log(prezzoCorsa);
 
-if (isNaN(prezzoCorsa)){
+if (isNaN(prezzoCorsa) || isNaN(eta)){
     alert('hai inserito delle lettere ripeti l\'operazione')
 } else {
 //  sconto solo su condizione
