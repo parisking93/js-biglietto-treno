@@ -3,9 +3,20 @@
 // L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 
 // input utente 
-var eta = prompt('Quanti hanni hai ?');
-var km = prompt('Quanti chilometri devi percorrere ?');
+var eta = parseInt(prompt('Quanti hanni hai ?'));
+var km = parseFloat(prompt('Quanti chilometri devi percorrere ?'));
 // fine input utente 
 
-console.log(eta);
-console.log(km);
+// calcolo prezzo della corsa in base ai kilometri 
+var prezzoCorsa = km * 0.21
+
+//  sconto solo su condizione
+if (eta > 65) {
+    prezzoCorsa *= 0.6;
+} else if (eta < 18) {
+    prezzoCorsa *= 0.8;
+    console.log(prezzoCorsa);
+}
+// fine sconto 
+
+
