@@ -15,8 +15,10 @@ if (eta > 65) {
     prezzoCorsa *= 0.6;
 } else if (eta < 18) {
     prezzoCorsa *= 0.8;
-    console.log(prezzoCorsa);
 }
 // fine sconto 
+
+// output del prezzo della corsa 
+document.getElementById('price').innerHTML = 'il prezzo da pagare è ' + prezzoCorsa.toFixed(2) + ' €';
 
 
